@@ -1,0 +1,388 @@
+{
+  "Uuid": "fa8270ba-00f3-4451-8a1f-bb85c109f5b3",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Place Beams",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
+      "SelectedIndex": 203,
+      "SelectedString": "BHE_StructuralFraming_Fabricated_I_Section:FB1000x800x604",
+      "NodeType": "ExtensionNode",
+      "Id": "f976b6e2f000481a805c57ab5b259c01",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1d263a39990144668d4f94911e0950a4",
+          "Name": "Family Type",
+          "Description": "The selected Family Type",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All family types available in the document."
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementsSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003822b8",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038236e",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003823f0",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382465",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003824d6",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003825b7",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382623",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038268b",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003826c7",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003826cb",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003826cf",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003826d3",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003826d7",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003826db",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003826df",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382752",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382756",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038275a",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038275e",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382762",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382766",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038276a",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038276e",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382772",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382776",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038277a",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038277e",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382782",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382786",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038278a",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038278e",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382792",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382796",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038279a",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038279e",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827a2",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827a6",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827aa",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827ae",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827b2",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827b6",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827ba",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827be",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827c2",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827c6",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827ca",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827ce",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827d2",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827d6",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827f0",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827f4",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827f8",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003827fc",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382800",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382804",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382808",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038280c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382810",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382814",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382818",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038281c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382820",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382824",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382828",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038282c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382830",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382834",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382838",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038283c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382840",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382844",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382848",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038284c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382850",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382854",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382858",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038285c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382860",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382864",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382868",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038286c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382870",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382874",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382878",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038287c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382880",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382884",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382888",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038288c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382890",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382894",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-00382898",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-0038289c",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003828a0",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003828a4",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003828a8",
+        "68f083d6-3923-4bc2-bb40-288e156a1b77-003828ac"
+      ],
+      "Id": "562d23b99684406f8bb5e0a82b36537d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "29098c6171284ca3b29736787964031f",
+          "Name": "Elements",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "7454e641-5bf5-45cb-99de-fd25980f8d58",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "f847808b229f40f7a5d133c0c6a4adaa",
+      "Inputs": [
+        {
+          "Id": "932590e8b917444e833df0bf65961f66",
+          "Name": "_curve",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1ca66aeeee2945f0a8511997c59eddd8",
+          "Name": "_structuralFramingType",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5034d22d7ebc47b5bba6e98a7bc691b8",
+          "Name": "_level",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b627bc170d674992a0598e23f2c85b53",
+          "Name": "_beam",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "This node will take an input of curves and attempt to make a structural framing member by type and level. "
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Levels, DSRevitNodesUI",
+      "SelectedIndex": 87,
+      "SelectedString": "Level Retail 06 SSL",
+      "NodeType": "ExtensionNode",
+      "Id": "bdca9220fc184870907353ebe18611a8",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "de70209a38464ff6821eacd938d7d57a",
+          "Name": "Levels",
+          "Description": "The selected Levels",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Select a level in the active document"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.CurveElement.Curve",
+      "Id": "ef41cd02ac2947d0b5bc735400eaaae3",
+      "Inputs": [
+        {
+          "Id": "5e7db60ea2f84e5d90e7d01e3cccb857",
+          "Name": "curveElement",
+          "Description": "Revit.Elements.CurveElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "44e91dffee504a169e7ca216cbf36776",
+          "Name": "Curve",
+          "Description": "Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Obtain the geometry curve for this geometry curve\n\nCurveElement.Curve: Curve"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "1d263a39990144668d4f94911e0950a4",
+      "End": "1ca66aeeee2945f0a8511997c59eddd8",
+      "Id": "8c523c1854074cbcbb86be5fc425728a"
+    },
+    {
+      "Start": "29098c6171284ca3b29736787964031f",
+      "End": "5e7db60ea2f84e5d90e7d01e3cccb857",
+      "Id": "322b3729e70f42dc84fd7b552f96b469"
+    },
+    {
+      "Start": "de70209a38464ff6821eacd938d7d57a",
+      "End": "5034d22d7ebc47b5bba6e98a7bc691b8",
+      "Id": "61df5593026948fe839e66f0ceeb6742"
+    },
+    {
+      "Start": "44e91dffee504a169e7ca216cbf36776",
+      "End": "932590e8b917444e833df0bf65961f66",
+      "Id": "f1592e007a944888b04fc492f7c77972"
+    }
+  ],
+  "Dependencies": [
+    "7454e641-5bf5-45cb-99de-fd25980f8d58"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "archi-lab.net",
+      "Version": "2023.213.1722",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "f847808b229f40f7a5d133c0c6a4adaa"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "1.10",
+      "Data": {}
+    }
+  ],
+  "Author": "None provided",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.1.8246",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": 2.5697946548461914,
+      "EyeY": 87.608436584472656,
+      "EyeZ": -96.492790222167969,
+      "LookX": -7.5697946548461914,
+      "LookY": -76.608436584472656,
+      "LookZ": 88.492790222167969,
+      "UpX": -0.040537949651479721,
+      "UpY": 0.87964898347854614,
+      "UpZ": 0.47389277815818787
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Family Types",
+        "Id": "f976b6e2f000481a805c57ab5b259c01",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 191.52481495252391,
+        "Y": -15.124952109670744
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Elements",
+        "Id": "562d23b99684406f8bb5e0a82b36537d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 115.4111874299598,
+        "Y": -246.06146810412758
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "StructuralFraming.BeamByCurve",
+        "Id": "f847808b229f40f7a5d133c0c6a4adaa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 873.19748218959069,
+        "Y": -85.205604739553223
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Levels",
+        "Id": "bdca9220fc184870907353ebe18611a8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 464.87869842446946,
+        "Y": 103.76451504789873
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "CurveElement.Curve",
+        "Id": "ef41cd02ac2947d0b5bc735400eaaae3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 395.83543119340982,
+        "Y": -242.6918584817696
+      }
+    ],
+    "Annotations": [],
+    "X": -103.73207752398203,
+    "Y": 244.28363143871024,
+    "Zoom": 0.97772245076655251
+  }
+}

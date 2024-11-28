@@ -1,0 +1,525 @@
+{
+  "Uuid": "e3316230-ca97-4fe0-8172-eab9dcafe4e2",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Link All Revit files",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "f4fbf28e-ab67-4436-a732-575a7685949c",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "9169fd42ce7c474f88d51a93840e04fd",
+      "Inputs": [
+        {
+          "Id": "aea31e231cdf4e7789a9e4b5564f1e0c",
+          "Name": "Filepaths",
+          "Description": "Input the filepaths of selected models here\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a874120b22c74f6aa96a6e4ad2e314cb",
+          "Name": "Worksets_optional",
+          "Description": "Input the worksets the links will be placed on.\nIf no workset is placed here, the links will be placed on current workset.\n\nvar[]..[]\nDefault value : None",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "286412b083484dc0a608b98801e939c0",
+          "Name": "PinLinks_optional",
+          "Description": "Input 'true' if you want to pin the links in place.\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c7cebf5203ae4566941625b5f855e7fa",
+          "Name": "ClosedWorksetNamesContain_optional",
+          "Description": "Input a string of character (or a list of strings) contained in the name of the worksets to keep closed in links\n\nvar[]..[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "891b6e0f326b480ea207fd90d356b15e",
+          "Name": "LinkInstance",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Link models with shared coordinates. Optionally, the node can place the models on the selected worksets and pin them in place."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Directory, CoreNodeModels",
+      "HintPath": "C:\\Users\\lmeisinger\\OneDrive - Buro Happold\\Projects\\Project W\\Architect\\Models\\230210",
+      "InputValue": "C:\\Users\\lmeisinger\\OneDrive - Buro Happold\\Projects\\Project W\\Architect\\Models\\230210",
+      "NodeType": "ExtensionNode",
+      "Id": "d80b6c01f92b4b77aa82198833bb4c52",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8c65e9d5aed84de29d8be43c5215e043",
+          "Name": "",
+          "Description": "Directory path",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a directory on the system to get its path"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DirectoryObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "2a8f062665b74b12870cc5a01afece04",
+      "Inputs": [
+        {
+          "Id": "56ca7694e1e04c5c9f63e882d0bbc826",
+          "Name": "path",
+          "Description": "Path to the directory (type: string)",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "caca011f9ed04ea48fae117db621e632",
+          "Name": "directory",
+          "Description": "Directory object.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a directory object from a path"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.IO.FileSystem.GetDirectoryContents@var,string,bool",
+      "Id": "66b58f33359f41b4b3872df83ceffe08",
+      "Inputs": [
+        {
+          "Id": "721c311c8ae94efeba023b8389bd694c",
+          "Name": "directory",
+          "Description": "Directory to get contents of\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "caf8760d47904c03b5a1cc3462d3c7f2",
+          "Name": "searchString",
+          "Description": "Search string used to filter results\n\nstring\nDefault value : \"*.*\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7ebba36120cd41789ae9d6ecbae72c96",
+          "Name": "includeSubdirectories",
+          "Description": "Set to true to include files and folders in subdirectories (recursive) or set to false to include results from top-level of given directory only.\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "248e34c7326447e9a12ef39b82c99112",
+          "Name": "files",
+          "Description": "Resulting files from query",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0000dedc64004d9986d5f337f225a013",
+          "Name": "directories",
+          "Description": "Resulting directories from query",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Will return a list of files and directories that are contained within a given directory. An optional searchString can be used to filter the results.\n\nFileSystem.GetDirectoryContents (directory: var, searchString: string = \"*.*\", includeSubdirectories: bool = false): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"*.rvt\";",
+      "Id": "b7b666d2144b4fa2b1fb6b4af3a7388e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b9a774b8a715419abca514ab5c6a0cb7",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "f4fbf28e-ab67-4436-a732-575a7685949c",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "12614b000bfb4a698db7f2923cc90ca7",
+      "Inputs": [
+        {
+          "Id": "79fc4fb0c61642e8b6622fe6bb0519cb",
+          "Name": "Filepaths",
+          "Description": "Input the filepaths of selected models here\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9294e877db8c42f5937ff7bc4cb6dec7",
+          "Name": "Worksets_optional",
+          "Description": "Input the worksets the links will be placed on.\nIf no workset is placed here, the links will be placed on current workset.\n\nvar[]..[]\nDefault value : None",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bb41cd58222648cdb656a8c9136fb52d",
+          "Name": "PinLinks_optional",
+          "Description": "Input 'true' if you want to pin the links in place.\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "145087bc732c4836bb7627669180f36e",
+          "Name": "ClosedWorksetNamesContain_optional",
+          "Description": "Input a string of character (or a list of strings) contained in the name of the worksets to keep closed in links\n\nvar[]..[]\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9c41812c9b554e39bcd5bcbb1869a834",
+          "Name": "LinkInstance",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Link models with shared coordinates. Optionally, the node can place the models on the selected worksets and pin them in place."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\Users\\lmeisinger\\OneDrive - Buro Happold\\Projects\\Project W\\Architect\\Models\\230215\\PW-2022002D-P0803-WAT-PL-ARC-DDE-000-XA-000003.rvt",
+      "InputValue": "..\\..\\Projects\\Project W\\Architect\\Models\\230215\\PW-2022002D-P0803-WAT-PL-ARC-DDE-000-XA-000003.rvt",
+      "NodeType": "ExtensionNode",
+      "Id": "416c1afb9a904247bcee57978cceab66",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3f7aaca04e524093a9ec20bb5d9a5ef1",
+          "Name": "",
+          "Description": "File Path",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its file path."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\Users\\lmeisinger\\OneDrive - Buro Happold\\Projects\\Project W\\Architect\\Models\\230215\\PW-2022002D-P0803-WAT-PL-ARC-DDE-000-XA-000007.rvt",
+      "InputValue": "..\\..\\Projects\\Project W\\Architect\\Models\\230215\\PW-2022002D-P0803-WAT-PL-ARC-DDE-000-XA-000007.rvt",
+      "NodeType": "ExtensionNode",
+      "Id": "69c2b16be5bc49fc9d1a301397a27afa",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "00bec8b55d43469386d5be877ea234f2",
+          "Name": "",
+          "Description": "File Path",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its file path."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "f4fd94b2c3dd4bcf8f282c8dff02c402",
+      "Inputs": [
+        {
+          "Id": "2d4b56f284e44b2b8f618fb3235480ed",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e812f8bb610b459894dc1ff3d654141d",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3728b91d4aec47a2ae204162b0e6a78b",
+          "Name": "list",
+          "Description": "A list (type: var[]..[])",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list out of the given inputs"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "8c65e9d5aed84de29d8be43c5215e043",
+      "End": "56ca7694e1e04c5c9f63e882d0bbc826",
+      "Id": "d8f8c04466e5452ba4b60f40a4147b39"
+    },
+    {
+      "Start": "caca011f9ed04ea48fae117db621e632",
+      "End": "721c311c8ae94efeba023b8389bd694c",
+      "Id": "9d287473c28a4ae5a5fdf0828895bae1"
+    },
+    {
+      "Start": "b9a774b8a715419abca514ab5c6a0cb7",
+      "End": "caf8760d47904c03b5a1cc3462d3c7f2",
+      "Id": "ded282ea5c2f4f6f98412332b0c9579d"
+    },
+    {
+      "Start": "3f7aaca04e524093a9ec20bb5d9a5ef1",
+      "End": "2d4b56f284e44b2b8f618fb3235480ed",
+      "Id": "f5f906a5e64d42519d4543f5f6231618"
+    },
+    {
+      "Start": "00bec8b55d43469386d5be877ea234f2",
+      "End": "e812f8bb610b459894dc1ff3d654141d",
+      "Id": "acd4af698a43463e86ef3c03d56f7ab4"
+    },
+    {
+      "Start": "3728b91d4aec47a2ae204162b0e6a78b",
+      "End": "79fc4fb0c61642e8b6622fe6bb0519cb",
+      "Id": "afed32e986624a48839edc847f471fc6"
+    }
+  ],
+  "Dependencies": [
+    "f4fbf28e-ab67-4436-a732-575a7685949c"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Morpheus",
+      "Version": "2019.8.26",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "9169fd42ce7c474f88d51a93840e04fd",
+        "12614b000bfb4a698db7f2923cc90ca7"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "1.10",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.1.8246",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "LinkModel.SharedCoordinates",
+        "Id": "9169fd42ce7c474f88d51a93840e04fd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 811.48159459386318,
+        "Y": 22.636573994494427
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Directory Path",
+        "Id": "d80b6c01f92b4b77aa82198833bb4c52",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -49.345946978478651,
+        "Y": 25.554026740756171
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Directory From Path",
+        "Id": "2a8f062665b74b12870cc5a01afece04",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 213.87435895638134,
+        "Y": 24.254398600883178
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FileSystem.GetDirectoryContents",
+        "Id": "66b58f33359f41b4b3872df83ceffe08",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 433.08535189174233,
+        "Y": 23.294821245494518
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "b7b666d2144b4fa2b1fb6b4af3a7388e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 242.36382181810416,
+        "Y": 117.10808089959244
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "LinkModel.SharedCoordinates",
+        "Id": "12614b000bfb4a698db7f2923cc90ca7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 811.48159459386341,
+        "Y": 470.32091414456875
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "File Path",
+        "Id": "416c1afb9a904247bcee57978cceab66",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 33.001877135063523,
+        "Y": 497.15004160367369
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "File Path",
+        "Id": "69c2b16be5bc49fc9d1a301397a27afa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 30.046864988858374,
+        "Y": 607.96299708636536
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List Create",
+        "Id": "f4fd94b2c3dd4bcf8f282c8dff02c402",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 603.31922135264983,
+        "Y": 495.67253553057105
+      }
+    ],
+    "Annotations": [],
+    "X": 149.33103675938781,
+    "Y": 117.21665075813689,
+    "Zoom": 0.54145293516128323
+  }
+}

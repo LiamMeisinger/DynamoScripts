@@ -1,0 +1,246 @@
+{
+  "Uuid": "8c7e2d10-b681-4ff2-b092-95ff2ae74c2a",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Toogle.Workset.Visibility",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Views.Views.SetWorksetVisibility@Revit.Elements.Views.View,archilab.Revit.Elements.Workset[],string",
+      "Id": "51d5128ab22040d2a2f582ec08b99699",
+      "Inputs": [
+        {
+          "Id": "17cfa69061ea47988466592d4c68b95d",
+          "Name": "view",
+          "Description": "View to set the visibility on.\n\nView",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "12387a4d2b3b4aaebdf01fe814ee9553",
+          "Name": "worksets",
+          "Description": "Worksets to set the visibility for.\n\nWorkset[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ec7c85485c2447ad954f02258393ee7d",
+          "Name": "visibility",
+          "Description": "Visibility setting. Ex: Hide.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b2aa2eb63ed44155b08958ffc96a4c91",
+          "Name": "view",
+          "Description": "View",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Sets Workset visibility for a View.\n\nViews.SetWorksetVisibility (view: View, worksets: Workset[], visibility: string): View"
+    },
+    {
+      "ConcreteType": "archilabUI.WorksetUi, archilabUI2022",
+      "SelectedIndex": 10,
+      "SelectedString": "BHE_LINK_REVIT_ARCH",
+      "NodeType": "ExtensionNode",
+      "Id": "138fe4ed92e74c7fafc478fa4e6ec25c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "aaf9db1e48a9429783481e69bcde78a8",
+          "Name": "workset",
+          "Description": "The selected workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Retrieve all available Worksets."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Views, DSRevitNodesUI",
+      "SelectedIndex": 6,
+      "SelectedString": "{3D - Liam.MeisingerRX942}",
+      "NodeType": "ExtensionNode",
+      "Id": "dea24250a1ce4af5b26423dcf6d427aa",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6259acaa284644f7abb741ee0970b852",
+          "Name": "Views",
+          "Description": "The selected Views",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All views available in the current document."
+    },
+    {
+      "ConcreteType": "archilabUI.WorksetVisibilityUi, archilabUI2022",
+      "SelectedIndex": 0,
+      "SelectedString": "Hidden",
+      "NodeType": "ExtensionNode",
+      "Id": "a54f93a5f2044f2da519883493c51e8c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "90e0b8d4a7a743529f755ee7f2dfa617",
+          "Name": "visibility",
+          "Description": "The selected visibility",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Retrieve all available Workset Visibility settings."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "aaf9db1e48a9429783481e69bcde78a8",
+      "End": "12387a4d2b3b4aaebdf01fe814ee9553",
+      "Id": "09ceb13ced864ca1bc4a8b2b55e7eb02"
+    },
+    {
+      "Start": "6259acaa284644f7abb741ee0970b852",
+      "End": "17cfa69061ea47988466592d4c68b95d",
+      "Id": "df31f518c7da412388f21e1eb43de018"
+    },
+    {
+      "Start": "90e0b8d4a7a743529f755ee7f2dfa617",
+      "End": "ec7c85485c2447ad954f02258393ee7d",
+      "Id": "f0333cfe6b884ceaa044284fa8c4a848"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "archi-lab.net",
+      "Version": "2023.213.1722",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "51d5128ab22040d2a2f582ec08b99699",
+        "138fe4ed92e74c7fafc478fa4e6ec25c",
+        "a54f93a5f2044f2da519883493c51e8c"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "1.10",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.1.8246",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Views.SetWorksetVisibility",
+        "Id": "51d5128ab22040d2a2f582ec08b99699",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 377.16913946587533,
+        "Y": 125.33858999572971
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Worksets",
+        "Id": "138fe4ed92e74c7fafc478fa4e6ec25c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4.813056379822001,
+        "Y": 121.84866468842728
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Views",
+        "Id": "dea24250a1ce4af5b26423dcf6d427aa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -10.11572700296739,
+        "Y": 17.367952522255109
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Workset Visibility",
+        "Id": "a54f93a5f2044f2da519883493c51e8c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 57.82429685215493,
+        "Y": 220.22756344568666
+      }
+    ],
+    "Annotations": [],
+    "X": 80.644395133410569,
+    "Y": 214.2602540431572,
+    "Zoom": 0.78436932804482717
+  }
+}

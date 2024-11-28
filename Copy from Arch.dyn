@@ -1,0 +1,434 @@
+{
+  "Uuid": "f9feca7b-ed73-47b3-b493-92c374b7acdf",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Copy from Arch",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Selection.Select.GetDocuments",
+      "Id": "1fd8c8b1f5f3449caf9591ac0293616e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "66c5ff4efe6948a39ee2c528f84ac37e",
+          "Name": "Link Doc",
+          "Description": "Link Documents, Link Names, Link Instances and Link Paths.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "89e84b047adc4a259609c82fb4baf61d",
+          "Name": "Link Name",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "463631b97f9a4425ab9f57509af01193",
+          "Name": "Link Instance",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c351d11b624840c2a0ae0ada94cd065c",
+          "Name": "Link Path",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Retrieves all Link Documents and their Names/Paths.\n\nSelect.GetDocuments ( ): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Rhythm.Revit.Application.Documents.CopyElementsFromLinkedDocument@var,Revit.Elements.Element,Revit.Elements.Element[]",
+      "Id": "df705a30d4964e4dbe061f7d7800d97a",
+      "Inputs": [
+        {
+          "Id": "372364e501fc46d7b7c07d51ee12544b",
+          "Name": "sourceDocument",
+          "Description": "The background opened document object, (preferably this is the title as obtained with Applications.OpenDocumentFile from Rhythm).\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "df0265552dca4336ba84c2c3c90b2e83",
+          "Name": "sourceInstance",
+          "Description": "The instance of the link to copy from.\n\nElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6d250ce807d54e6dbd19ccb30fa956f5",
+          "Name": "elements",
+          "Description": "The elements to copy.\n\nElement[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7a938cc9c2554c138b0164d99b19b6c7",
+          "Name": "newElements",
+          "Description": "The copied elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "This node will copy the given elements from the given linked document into the active document.\n\nDocuments.CopyElementsFromLinkedDocument (sourceDocument: var, sourceInstance: Element, elements: Element[]): Element[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "f298cd94eb494a1483c8336000e67a6b",
+      "Inputs": [
+        {
+          "Id": "6bf6094dfb104d8d885457091adecbc0",
+          "Name": "",
+          "Description": "Node to show output from",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1fdc0195f57a4e959dc1dfdb189eeb59",
+          "Name": "",
+          "Description": "Node output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the node's output"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "8836fbc72d164a7489285e8ef612107d",
+      "Inputs": [
+        {
+          "Id": "498118acc2ee414fb6b7d17561398a4d",
+          "Name": "",
+          "Description": "Node to show output from",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "41d66ffb41c94024b950a61d06514225",
+          "Name": "",
+          "Description": "Node output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the node's output"
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 549,
+      "SelectedString": "OST_StructuralColumns",
+      "NodeType": "ExtensionNode",
+      "Id": "7908a816532a4b2bb26976a48669225f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f5458fa0edfe480c9dd06af92d594731",
+          "Name": "Category",
+          "Description": "The selected Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All built-in categories."
+    },
+    {
+      "ConcreteType": "RhythmUI.Links, RhythmUI",
+      "SelectedIndex": 0,
+      "SelectedString": "JCRSE-BIG-ARC-M3D-00001.rvt : 4 : location JRCSE, Sevilla",
+      "NodeType": "ExtensionNode",
+      "Id": "ba9323ba92fd42e9a89c5daa1e87797a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "402e0a70132a4480bc22504028d41a61",
+          "Name": "linkInstance",
+          "Description": "The selected linkInstance",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a link instance from all of the Revit links in your file."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.LinkElement.OfCategory@Revit.Elements.Element,Revit.Elements.Category",
+      "Id": "f108f648ca8141238e3774ac2f3af97c",
+      "Inputs": [
+        {
+          "Id": "2b6373b31f344a04a7285c82581775e9",
+          "Name": "linkInstance",
+          "Description": "Input the Revit Link Instance.\n\nElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a5c78476bb634effb449401f3c9d0ec9",
+          "Name": "category",
+          "Description": "Input the LinkElement Category.\n\nCategory",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "08c6ab2b5c214cccb550dd851d701de3",
+          "Name": "LinkElement[]",
+          "Description": "LinkElement[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get LinkElements from a linked Revit document (a LinkInstance) by Category. LinkElements are optimized for use with BimorphNodes Element and BoundingBox nodes and are compatible with all other Dynamo nodes that accept Elements as inputs. \r\rVisit bimorph.com/bimorph-nodes for support\n\nLinkElement.OfCategory (linkInstance: Element, category: Category): LinkElement[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "66c5ff4efe6948a39ee2c528f84ac37e",
+      "End": "372364e501fc46d7b7c07d51ee12544b",
+      "Id": "0b3d8fc886b34d3596e2f97e2a1e729c"
+    },
+    {
+      "Start": "89e84b047adc4a259609c82fb4baf61d",
+      "End": "498118acc2ee414fb6b7d17561398a4d",
+      "Id": "2b5df9bdec834d55b60bc5b96ef0fb96"
+    },
+    {
+      "Start": "463631b97f9a4425ab9f57509af01193",
+      "End": "df0265552dca4336ba84c2c3c90b2e83",
+      "Id": "593deb61a47646ab83f76d583a378848"
+    },
+    {
+      "Start": "7a938cc9c2554c138b0164d99b19b6c7",
+      "End": "6bf6094dfb104d8d885457091adecbc0",
+      "Id": "1ba3ea0ebf904972be842213d0da6147"
+    },
+    {
+      "Start": "f5458fa0edfe480c9dd06af92d594731",
+      "End": "a5c78476bb634effb449401f3c9d0ec9",
+      "Id": "bf42c1c8add14454a563ec0a18313d70"
+    },
+    {
+      "Start": "402e0a70132a4480bc22504028d41a61",
+      "End": "2b6373b31f344a04a7285c82581775e9",
+      "Id": "b61536c989d34900887a51cbd2462b3b"
+    },
+    {
+      "Start": "08c6ab2b5c214cccb550dd851d701de3",
+      "End": "6d250ce807d54e6dbd19ccb30fa956f5",
+      "Id": "23d04138e2244e64933f9f41943e713d"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "archi-lab.net",
+      "Version": "2023.213.1722",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "1fd8c8b1f5f3449caf9591ac0293616e"
+      ]
+    },
+    {
+      "Name": "Rhythm",
+      "Version": "2023.2.2",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "df705a30d4964e4dbe061f7d7800d97a",
+        "ba9323ba92fd42e9a89c5daa1e87797a"
+      ]
+    },
+    {
+      "Name": "bimorphNodes",
+      "Version": "4.2.4",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "f108f648ca8141238e3774ac2f3af97c"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "1.10",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.1.8246",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Select.GetDocuments",
+        "Id": "1fd8c8b1f5f3449caf9591ac0293616e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -425.05200986736952,
+        "Y": 202.17768432632292
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "ʳʰʸᵗʰᵐ|Documents.CopyElementsFromLinkedDocument",
+        "Id": "df705a30d4964e4dbe061f7d7800d97a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 348.96390154014256,
+        "Y": 217.59784084812082
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "f298cd94eb494a1483c8336000e67a6b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 831.11653267855343,
+        "Y": 290.75789404099311
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "8836fbc72d164a7489285e8ef612107d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 60.714063076351636,
+        "Y": -58.35590305299047
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Categories",
+        "Id": "7908a816532a4b2bb26976a48669225f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -517.36401267417978,
+        "Y": 517.78381176980054
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Links",
+        "Id": "ba9323ba92fd42e9a89c5daa1e87797a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -647.35227152842572,
+        "Y": 381.52782348514427
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "LinkElement.OfCategory",
+        "Id": "f108f648ca8141238e3774ac2f3af97c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -50.4412387320117,
+        "Y": 396.14478584079109
+      }
+    ],
+    "Annotations": [],
+    "X": 451.51838435077724,
+    "Y": 56.903738092643863,
+    "Zoom": 0.58752218578006632
+  }
+}

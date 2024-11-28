@@ -1,0 +1,265 @@
+{
+  "Uuid": "8c3e5091-ac45-4b4d-a989-5b7fbd79afdc",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Create worksets (Player)",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "bc00f8fc831846ab907e25b471addad6",
+      "Name": "String",
+      "Type": "string",
+      "Type2": "string",
+      "Value": "BH_ELEM_AREA_Test 1",
+      "Description": "Creates a string.",
+      "SelectedIndex": 0
+    },
+    {
+      "Id": "c9fd0e9a156a43869316dc689c3a5a80",
+      "Name": "String",
+      "Type": "string",
+      "Type2": "string",
+      "Value": "BH_ELEM_AREA_Test 2",
+      "Description": "Creates a string.",
+      "SelectedIndex": 0
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Elements.Workset.ByName@string",
+      "Id": "b8254263c9c049da99f97a5df7f1f69b",
+      "Inputs": [
+        {
+          "Id": "e78569bbdabe432cb254edd2f4b7cb9f",
+          "Name": "name",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "adddc241496d4cbf958797f211a35471",
+          "Name": "Workset",
+          "Description": "Workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create Workset by Name.\n\nWorkset.ByName (name: string): Workset"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "BH_ELEM_AREA_Test 1",
+      "Id": "bc00f8fc831846ab907e25b471addad6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "938df3a5c796464e862f004db0fda4d4",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "BH_ELEM_AREA_Test 2",
+      "Id": "c9fd0e9a156a43869316dc689c3a5a80",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f569faa3d86d48778a7e3c0dc050c523",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "d8463664ba224160b6e2a3c7d014576a",
+      "Inputs": [
+        {
+          "Id": "063a0e3816d644828bd393ea6f4ab5f0",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "439f9b10017c48f48dc5742a41b19208",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a866c48f911449bab524e8a0540b53fb",
+          "Name": "list",
+          "Description": "A list (type: var[]..[])",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list out of the given inputs"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "938df3a5c796464e862f004db0fda4d4",
+      "End": "063a0e3816d644828bd393ea6f4ab5f0",
+      "Id": "b3c02724921e452ca769f7def57921cd",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "f569faa3d86d48778a7e3c0dc050c523",
+      "End": "439f9b10017c48f48dc5742a41b19208",
+      "Id": "8781abbd25c24e93a96cf4b3cee238c8",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a866c48f911449bab524e8a0540b53fb",
+      "End": "e78569bbdabe432cb254edd2f4b7cb9f",
+      "Id": "438af89589d54c1cb2d479cbdaf9e583",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "archi-lab.net",
+      "Version": "2023.213.1722",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "b8254263c9c049da99f97a5df7f1f69b"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "1.10",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.16.2.5624",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Workset.ByName",
+        "ShowGeometry": true,
+        "Id": "b8254263c9c049da99f97a5df7f1f69b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 892.387159757934,
+        "Y": 200.40464451927045
+      },
+      {
+        "Name": "String",
+        "ShowGeometry": true,
+        "Id": "bc00f8fc831846ab907e25b471addad6",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 185.3006217399552,
+        "Y": 151.49931257445172
+      },
+      {
+        "Name": "String",
+        "ShowGeometry": true,
+        "Id": "c9fd0e9a156a43869316dc689c3a5a80",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 184.44506561310982,
+        "Y": 290.50956924838033
+      },
+      {
+        "Name": "List Create",
+        "ShowGeometry": true,
+        "Id": "d8463664ba224160b6e2a3c7d014576a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 598.53067963554111,
+        "Y": 194.47523859559288
+      }
+    ],
+    "Annotations": [],
+    "X": 175.67359528154728,
+    "Y": 133.32776196722892,
+    "Zoom": 0.53491931476682941
+  }
+}

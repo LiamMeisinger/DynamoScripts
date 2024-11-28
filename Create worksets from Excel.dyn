@@ -1,0 +1,284 @@
+{
+  "Uuid": "8c3e5091-ac45-4b4d-a989-5b7fbd79afdc",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Create worksets from Excel",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "a606f3bcdf5e4823afe2800deffc5413",
+      "Name": "File Path",
+      "Type": "string",
+      "Type2": "string",
+      "Value": ".\\Worksets.xlsx",
+      "Description": "Allows you to select a file on the system to get its file path.",
+      "SelectedIndex": 0
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\Users\\lmeisinger\\OneDrive - Buro Happold\\Dynamo\\Dynamo\\Worksets.xlsx",
+      "InputValue": ".\\Worksets.xlsx",
+      "NodeType": "ExtensionNode",
+      "Id": "a606f3bcdf5e4823afe2800deffc5413",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "7f6e5a8c12314e39af62f165c9c0440c",
+          "Name": "",
+          "Description": "File Path",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its file path."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Sheet 1\";",
+      "Id": "6804be5985634a3c927ae77eba5dfc09",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f1baffff0fa641b5961a413fd0ce03d0",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSOffice.Data.OpenXMLImportExcel@string,string,int,int,bool",
+      "Id": "139f1835a43a4775a884bce64af0fc75",
+      "Inputs": [
+        {
+          "Id": "1208ac2ee4ca4c4c8c9f6ba352fed047",
+          "Name": "filePath",
+          "Description": "File representing the Excel workbook\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "13144a9095c34f2f8c27ff284ded893a",
+          "Name": "sheetName",
+          "Description": "Name of the worksheet containing data\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2e6dfbfa33ad410692d323f2294c50ec",
+          "Name": "startRow",
+          "Description": "Start row for reading data. Enter 0 for Row 1, 1 for Row 2, etc.\n\nint\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "de989372767043cd9f1df83212bf2fd8",
+          "Name": "startColumn",
+          "Description": "Start column for reading data. Enter 0 for Column A, 1 for Column B, etc.\n\nint\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5258fd4744ee4edf872e93aa9f727d47",
+          "Name": "readAsString",
+          "Description": "Toggle to read cells as strings\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8b41e36c8cdb4a15a4c580daa4a6267d",
+          "Name": "data",
+          "Description": "Rows of data from the Excel worksheet",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Read data from a Microsoft Excel spreadsheet by using the Open XML standard. Data is read by row and returned in a series of lists by row. Rows and columns are zero-indexed; for example, the value in cell A1 will appear in the data list at [0,0].\n\nData.OpenXMLImportExcel (filePath: string, sheetName: string, startRow: int = 0, startColumn: int = 0, readAsString: bool = false): var[][]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Elements.Workset.ByName@string",
+      "Id": "b8254263c9c049da99f97a5df7f1f69b",
+      "Inputs": [
+        {
+          "Id": "e78569bbdabe432cb254edd2f4b7cb9f",
+          "Name": "name",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "adddc241496d4cbf958797f211a35471",
+          "Name": "Workset",
+          "Description": "Workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create Workset by Name.\n\nWorkset.ByName (name: string): Workset"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "7f6e5a8c12314e39af62f165c9c0440c",
+      "End": "1208ac2ee4ca4c4c8c9f6ba352fed047",
+      "Id": "c62cff47402b46f587789e0124747b34",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "f1baffff0fa641b5961a413fd0ce03d0",
+      "End": "13144a9095c34f2f8c27ff284ded893a",
+      "Id": "6c39ef30ce9a4091bf9252f871889289",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "8b41e36c8cdb4a15a4c580daa4a6267d",
+      "End": "e78569bbdabe432cb254edd2f4b7cb9f",
+      "Id": "f9ddeb8cd2084a618f40425a26950ee9",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "archi-lab.net",
+      "Version": "2023.213.1722",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "b8254263c9c049da99f97a5df7f1f69b"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "1.10",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.16.2.5624",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "File Path",
+        "ShowGeometry": true,
+        "Id": "a606f3bcdf5e4823afe2800deffc5413",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 154.03281836590804,
+        "Y": 344.61279650173168
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "6804be5985634a3c927ae77eba5dfc09",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 157.38720349826804,
+        "Y": 484.91140371690994
+      },
+      {
+        "Name": "Data.OpenXMLImportExcel",
+        "ShowGeometry": true,
+        "Id": "139f1835a43a4775a884bce64af0fc75",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 486.22201079365368,
+        "Y": 346.05439916483243
+      },
+      {
+        "Name": "Workset.ByName",
+        "ShowGeometry": true,
+        "Id": "b8254263c9c049da99f97a5df7f1f69b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 860.91650906707662,
+        "Y": 344.93652176617104
+      }
+    ],
+    "Annotations": [],
+    "X": 173.68161516798745,
+    "Y": 148.0795585758764,
+    "Zoom": 0.41051741376862516
+  }
+}

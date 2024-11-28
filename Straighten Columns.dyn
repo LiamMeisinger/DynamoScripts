@@ -1,0 +1,1458 @@
+{
+  "Uuid": "62d88d44-c275-4c78-b7c0-ef5088476e72",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Straighten Columns",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementsSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e695",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e699",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e69c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e69f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6a2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6a5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6a8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6ab",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6af",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6b2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6b4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6b7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6b9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6bc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6bf",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6c1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6c4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6c7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6c9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6cc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6ce",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6d0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6d3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6d5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6d8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6da",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6dd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6df",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6e2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6e4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6e7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6e9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6ec",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6ee",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6f0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6f3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6f5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6f7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6fa",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6fc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e6fe",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e701",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e703",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e705",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e707",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e70a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e70d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e710",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e712",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e715",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e718",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e71a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e71d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e71f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e722",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e725",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e727",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e72a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e72c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e72e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e731",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e733",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e735",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e737",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e739",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e73b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e73d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e73f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e741",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e744",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e746",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e748",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e74a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e74d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e74f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e751",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e754",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e757",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e759",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e75b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e75d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e75f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e762",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e764",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e767",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e769",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e76b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e76d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e76f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e771",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e773",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e776",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e778",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e77b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e77e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e780",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e783",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e785",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e787",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e789",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e78b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e78d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e78f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e792",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e794",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e796",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e798",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e79b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e79d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e79f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7a1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7a3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7a5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7a8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7aa",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ac",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ae",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7b1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7b4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7b7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ba",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7bc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7be",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7c0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7c2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7c4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7c6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7c8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ca",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7cc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7cf",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7d1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7d3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7d5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7d7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7d9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7db",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7dd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7e0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7e2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7e4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7e6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7e8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ea",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ec",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ee",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7f0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7f2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7f4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7f6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7f9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7fb",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7fd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e7ff",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e802",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e804",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e807",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e809",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e80b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e80d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e80f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e811",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e813",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e815",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e817",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e819",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e81b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e81d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e820",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e822",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e824",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e826",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e828",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e82a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e82e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e830",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e832",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e834",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e836",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e838",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e83a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e83c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e83e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e840",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e842",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e844",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e846",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e848",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e84a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e84c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e84e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e850",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e852",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e854",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e856",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e858",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e85a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e85c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e85e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e860",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e862",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e864",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e866",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e868",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e86a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e86c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e86e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e870",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e872",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e874",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e876",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e878",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e87a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e87c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e87e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e880",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e882",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e884",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e886",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e888",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e88a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e88c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e88e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e890",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e892",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e894",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e896",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e898",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e89a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e89c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e89e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8a0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8a3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8a5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8a7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8a9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8ab",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8ae",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e8b0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e931",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e933",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e935",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e937",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e939",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e93b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e93d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e93f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e941",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e943",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e945",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e947",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e949",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e94b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e953",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e955",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e957",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e959",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e95b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e95d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e95f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e961",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e963",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e965",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e967",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e969",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e96b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e96d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e96f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e971",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e973",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e975",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e977",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e979",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e97b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e97d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e97f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e981",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e983",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e985",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e987",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e989",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e98b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e98d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e98f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e991",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e993",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9a1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9a3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9a5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9a7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9a9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9ab",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9ad",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9af",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9b1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9b3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9b5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9b7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9b9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9bb",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9bd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9bf",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9c1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9c3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9c5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9c7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9c9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9cb",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9cd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9cf",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9d1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9d3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9d5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9d7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9d9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9db",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9dd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9df",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9e1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9e3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9e5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9e9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9eb",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9ed",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9ef",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9f1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9f3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9f5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9f7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9f9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9fb",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9fd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015e9ff",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea01",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea04",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea07",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea0a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea0c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea0e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea10",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea12",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea14",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea16",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea18",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea1b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea1d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea1f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea21",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea23",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea26",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea29",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea2c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea2f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea31",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea34",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea36",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea38",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea3b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea3d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea3f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea42",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea45",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea47",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea4a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea4d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea4f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea51",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea53",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea55",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea57",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea59",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea5b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea5d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea5f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea61",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea63",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea65",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea67",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ea69",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ec87",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ec8c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ec8e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ec92",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ec96",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ec9a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ec9e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eca0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eca4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eca6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eca8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecaa",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecac",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecae",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecb0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecb2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecb4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecb6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecb8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecba",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecbc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecbe",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecc0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecc2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecc4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecc6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecc8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecca",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eccc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecce",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecd0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecd2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecd4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ecd6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee3f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee43",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee45",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee48",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee4b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee4f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee51",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee53",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee55",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee58",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee5b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee5d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee5f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee61",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee63",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee65",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee67",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee69",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee6b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee6d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee6f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee71",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee73",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee75",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee77",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee79",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee7b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee7d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee7f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee81",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee84",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee86",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee89",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee8b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee8d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ee8f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eea5",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eea8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeaa",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeac",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeae",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeb0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeb2",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeb4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeb6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeb8",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eeba",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eebc",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eebe",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015eec0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef62",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef66",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef6a",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef6d",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef70",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef73",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef76",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef79",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef7c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef7f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef82",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef85",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef88",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef8b",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef8e",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef91",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef94",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef96",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef99",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef9c",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015ef9f",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efa1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efa3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efa6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efa9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efac",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efaf",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efb1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efb3",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efb6",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efb9",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efbb",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efbe",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efc1",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efc4",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efc7",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efca",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efcd",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efd0",
+        "dda81f77-3afe-4739-8c0b-2342367360fe-0015efd2",
+        "8681d733-16b8-4e68-982e-82d2402790c9-0016aef1"
+      ],
+      "Id": "edd326fc032c4246b28f279ef6ae7382",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e77511c49fbe488682ffb69a3778b276",
+          "Name": "Elements",
+          "Description": "The selected elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.X",
+      "Id": "3a7cd908426b439abb0dc6559bc08c22",
+      "Inputs": [
+        {
+          "Id": "52693cab13ac432ab397a9ad269b7871",
+          "Name": "point",
+          "Description": "Autodesk.DesignScript.Geometry.Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4311e4120f5940a39d9684164c9f0e90",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the X component of a Point\n\nPoint.X: double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.StartPoint",
+      "Id": "cbaeb8cde9c94a2fa4643917cdd1ef58",
+      "Inputs": [
+        {
+          "Id": "c9406917e1754fcb853961227683b828",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b8c623f54ece4069a5d1b36ea3e02671",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the start Point along the Curve\n\nCurve.StartPoint: Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.Y",
+      "Id": "d817f6bf997d4df0b34e32aba51b17f2",
+      "Inputs": [
+        {
+          "Id": "3179db79499c41b7b5ab1210843799cf",
+          "Name": "point",
+          "Description": "Autodesk.DesignScript.Geometry.Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "011f143080cc4c01af6816ebba23f0db",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the Y component of a Point\n\nPoint.Y: double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.EndPoint",
+      "Id": "816fcfa230d54d2ca6281d24eb9eb43b",
+      "Inputs": [
+        {
+          "Id": "bc8b0318715f4fec9812a67eecea0057",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0f0eaf7bed2d4f449f9fbe1e2ce008b4",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the end Point along the Curve\n\nCurve.EndPoint: Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.X",
+      "Id": "a43f159b72794fffb671b2c676ad9dbc",
+      "Inputs": [
+        {
+          "Id": "8c1e90bf117340ff9c33e6c5b7ee22c5",
+          "Name": "point",
+          "Description": "Autodesk.DesignScript.Geometry.Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "23924eda122f45ec98650e7daae8667d",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the X component of a Point\n\nPoint.X: double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.Y",
+      "Id": "f5eb6b5179874f0093220401292297ed",
+      "Inputs": [
+        {
+          "Id": "01513d6b2ad74563b6d5e73f85a6402b",
+          "Name": "point",
+          "Description": "Autodesk.DesignScript.Geometry.Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "96b168daf0e945c2805e5cb77a9bb7ff",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the Y component of a Point\n\nPoint.Y: double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "0b59c4d8-afe4-4063-bf7e-2195fa33e8a9",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "a84b1a87a0ed4b4b9e4db0a5155bc91f",
+      "Inputs": [
+        {
+          "Id": "eebb256cd8ed4a54a0d0f0e31aaf804e",
+          "Name": "element",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1d67cbc36fd14627887079f7200dcb41",
+          "Name": "points",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "312ffeba28544aaca2ffc1f26a604d9b",
+          "Name": "curveEndpoints",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b70c2e1b386f4f3dbf7a6120aa8bf16c",
+          "Name": "curves",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "55a6b7ab52b94b6aa8cd2fa8cfd3a6dc",
+          "Name": "isPoint",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "acb800bc532b476ca2ad93ffe65dcb98",
+          "Name": "isCurve",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "84017de7203e4aefb2ce8167e32f60ab",
+          "Name": "hasLocation",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "01d9928ccb024af3b6d82a4851b59d38",
+          "Name": "angle",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0bb3b086dfb44efc865dcd58ba94a2c1",
+          "Name": "hasRotation",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3bc9320bf96f4b5fab81a91de4aa6a6c",
+          "Name": "hasMulipleCurves",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "dc2435ebcff84423b99459013034b07f",
+          "Name": "mulipleCurves",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the location of an element as point, curve or curve loop, along with some booleans to help filtering the results. Unlike the OOTB Element.GetLocation node, it also returns sketch lines of sketch-based elements like floor slabs as well as the element's rotation property. Additionally, it supports quite a few more element types (e.g. railings, stairs etc.)."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "1bd2b723f0704e12a920262349b8afa2",
+      "Inputs": [
+        {
+          "Id": "29dcdd797fb244f39a231df6d3ad4492",
+          "Name": "",
+          "Description": "Node to show output from",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bc320bb01a2f4beeb9a84fff0f92dbb7",
+          "Name": "",
+          "Description": "Node output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the node's output"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.SetLocation@Autodesk.DesignScript.Geometry.Geometry",
+      "Id": "853b698d0fed4aa3bf29753190fdd4db",
+      "Inputs": [
+        {
+          "Id": "01b6fb88c51e4b02ad431f4260637530",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4d1dc48ecccd4fbda9881add08e57f60",
+          "Name": "geometry",
+          "Description": "New Location Point or Curve\n\nGeometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6a07652a62024f13930cb00e361cab0a",
+          "Name": "void",
+          "Description": "void",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Update an existing element's location\n\nElement.SetLocation (geometry: Geometry): void"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double",
+      "Id": "21525dc3fe494f60bbb274c1e326abec",
+      "Inputs": [
+        {
+          "Id": "bca765e97fc44457ad966ce190048a45",
+          "Name": "geometry",
+          "Description": "Autodesk.DesignScript.Geometry.Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5e9feb9693294313853e632efd5982c6",
+          "Name": "xTranslation",
+          "Description": "Displacement along X-axis.\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bfc61ce304094932a4515dc3f9366ae8",
+          "Name": "yTranslation",
+          "Description": "Displacement along Y-axis.\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "158479773f1e4d4b991dbefb347028b2",
+          "Name": "zTranslation",
+          "Description": "Displacement along Z-axis.\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b3fdf0bcde174883aad0a89f72465fe9",
+          "Name": "Geometry",
+          "Description": "Transformed Geometry.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Translates any given geometry by the given displacements in the x, y, and z directions defined in WCS respectively.\n\nGeometry.Translate (xTranslation: double = 0, yTranslation: double = 0, zTranslation: double = 0): Geometry"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "-@var[]..[],var[]..[]",
+      "Id": "a1af8625549d4215a249d5ce98b9d7b4",
+      "Inputs": [
+        {
+          "Id": "e836699350814e1a82bed0055cca57a6",
+          "Name": "x",
+          "Description": "Integer or double value\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e3bdafee8ef6421dbc8ca3cbc1b19cd7",
+          "Name": "y",
+          "Description": "Integer or double value\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "18038229441748bea8ec86f5c66a0a0b",
+          "Name": "number",
+          "Description": "Result of the y input subtracted from the x input",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns subtraction of x minus y\n\n- (x: var[]..[], y: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "-@var[]..[],var[]..[]",
+      "Id": "d3e1f5b73c2e48668267a3c33b58586f",
+      "Inputs": [
+        {
+          "Id": "55bd5b732b1149918591f8ac0fb91b84",
+          "Name": "x",
+          "Description": "Integer or double value\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fe09e365bb1947c4a6934f77fc54f0b8",
+          "Name": "y",
+          "Description": "Integer or double value\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8cf1c8117ab04b51a28cd2a4053db7f2",
+          "Name": "number",
+          "Description": "Result of the y input subtracted from the x input",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns subtraction of x minus y\n\n- (x: var[]..[], y: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Line.ByStartPointEndPoint@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "53175ce6f1b34b808a9a18c4197949c1",
+      "Inputs": [
+        {
+          "Id": "5ab6fd549b6b41adbedafd4658249838",
+          "Name": "startPoint",
+          "Description": "Line start point\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "717713c2242343e0b8bcaf0aa8eb56ae",
+          "Name": "endPoint",
+          "Description": "Line end point\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c12803ca1c6946d1a5c8adf04cd85c76",
+          "Name": "Line",
+          "Description": "Line from start and end point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Creates a straight Line between two input Points.\n\nLine.ByStartPointEndPoint (startPoint: Point, endPoint: Point): Line"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "e77511c49fbe488682ffb69a3778b276",
+      "End": "eebb256cd8ed4a54a0d0f0e31aaf804e",
+      "Id": "c7b9a7728a7246f18ef72aa94955f0fa"
+    },
+    {
+      "Start": "e77511c49fbe488682ffb69a3778b276",
+      "End": "01b6fb88c51e4b02ad431f4260637530",
+      "Id": "4180eb01af2c44fcb761c76a0cbde2de"
+    },
+    {
+      "Start": "4311e4120f5940a39d9684164c9f0e90",
+      "End": "e836699350814e1a82bed0055cca57a6",
+      "Id": "1abad385f8f0463181e7a41c88fb5551"
+    },
+    {
+      "Start": "b8c623f54ece4069a5d1b36ea3e02671",
+      "End": "3179db79499c41b7b5ab1210843799cf",
+      "Id": "009e7d2db2cc42b6ab861ef2a97703b5"
+    },
+    {
+      "Start": "b8c623f54ece4069a5d1b36ea3e02671",
+      "End": "52693cab13ac432ab397a9ad269b7871",
+      "Id": "75eb40acd9a74cd78494b28e10ebdb9d"
+    },
+    {
+      "Start": "b8c623f54ece4069a5d1b36ea3e02671",
+      "End": "5ab6fd549b6b41adbedafd4658249838",
+      "Id": "51fe109cdab7465c9b708ab3b2bde569"
+    },
+    {
+      "Start": "011f143080cc4c01af6816ebba23f0db",
+      "End": "55bd5b732b1149918591f8ac0fb91b84",
+      "Id": "a95839aa76254e7db3019b9b6c8a2209"
+    },
+    {
+      "Start": "0f0eaf7bed2d4f449f9fbe1e2ce008b4",
+      "End": "8c1e90bf117340ff9c33e6c5b7ee22c5",
+      "Id": "668bbc353c8246aeadf8d4100e75bbe3"
+    },
+    {
+      "Start": "0f0eaf7bed2d4f449f9fbe1e2ce008b4",
+      "End": "01513d6b2ad74563b6d5e73f85a6402b",
+      "Id": "0b39f150ae78459d80144527255aaec2"
+    },
+    {
+      "Start": "0f0eaf7bed2d4f449f9fbe1e2ce008b4",
+      "End": "bca765e97fc44457ad966ce190048a45",
+      "Id": "6ab369f17b9f4efba90afc5cb27c6de8"
+    },
+    {
+      "Start": "23924eda122f45ec98650e7daae8667d",
+      "End": "e3bdafee8ef6421dbc8ca3cbc1b19cd7",
+      "Id": "6667e0ed50bf4579bd3a18da13118eae"
+    },
+    {
+      "Start": "96b168daf0e945c2805e5cb77a9bb7ff",
+      "End": "fe09e365bb1947c4a6934f77fc54f0b8",
+      "Id": "6312c00cfe7144668f066f0df83d7268"
+    },
+    {
+      "Start": "b70c2e1b386f4f3dbf7a6120aa8bf16c",
+      "End": "29dcdd797fb244f39a231df6d3ad4492",
+      "Id": "75f481481454465d9f6cf1047abc34d6"
+    },
+    {
+      "Start": "bc320bb01a2f4beeb9a84fff0f92dbb7",
+      "End": "bc8b0318715f4fec9812a67eecea0057",
+      "Id": "2d5a71c4de7a4f7b873520adeaa7ffd4"
+    },
+    {
+      "Start": "bc320bb01a2f4beeb9a84fff0f92dbb7",
+      "End": "c9406917e1754fcb853961227683b828",
+      "Id": "356244bfc96f45c396dbb49b9bcde7e0"
+    },
+    {
+      "Start": "b3fdf0bcde174883aad0a89f72465fe9",
+      "End": "717713c2242343e0b8bcaf0aa8eb56ae",
+      "Id": "55d9cd790f274d3d8a29de2811ac25c5"
+    },
+    {
+      "Start": "18038229441748bea8ec86f5c66a0a0b",
+      "End": "5e9feb9693294313853e632efd5982c6",
+      "Id": "e83d543401e04dde9472bc6e24028af9"
+    },
+    {
+      "Start": "8cf1c8117ab04b51a28cd2a4053db7f2",
+      "End": "bfc61ce304094932a4515dc3f9366ae8",
+      "Id": "ed5b5353e9e141c69e821b1825b5fa1a"
+    },
+    {
+      "Start": "c12803ca1c6946d1a5c8adf04cd85c76",
+      "End": "4d1dc48ecccd4fbda9881add08e57f60",
+      "Id": "49a24aed084440f9aaa4d42ae52aa88b"
+    }
+  ],
+  "Dependencies": [
+    "0b59c4d8-afe4-4063-bf7e-2195fa33e8a9"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Clockwork for Dynamo 2.x",
+      "Version": "2.6.0",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "a84b1a87a0ed4b4b9e4db0a5155bc91f"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "1.10",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.1.8246",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -4456.40478515625,
+      "EyeY": 108030.1484375,
+      "EyeZ": 150919.921875,
+      "LookX": 4451.40478515625,
+      "LookY": -108019.1484375,
+      "LookZ": -150927.921875,
+      "UpX": 0.011613661423325539,
+      "UpY": 0.919135570526123,
+      "UpZ": -0.39377006888389587
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Elements",
+        "Id": "edd326fc032c4246b28f279ef6ae7382",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1004.3609087831918,
+        "Y": 551.14470177021394
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.X",
+        "Id": "3a7cd908426b439abb0dc6559bc08c22",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2588.5907210585383,
+        "Y": 257.61644707918413
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Curve.StartPoint",
+        "Id": "cbaeb8cde9c94a2fa4643917cdd1ef58",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2293.3642870511862,
+        "Y": 291.79953651497743
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.Y",
+        "Id": "d817f6bf997d4df0b34e32aba51b17f2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2589.7549090586531,
+        "Y": 361.34567404030855
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Curve.EndPoint",
+        "Id": "816fcfa230d54d2ca6281d24eb9eb43b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2285.7673618359277,
+        "Y": 626.29846817954967
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.X",
+        "Id": "a43f159b72794fffb671b2c676ad9dbc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2638.5497725563996,
+        "Y": 570.98298364568109
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.Y",
+        "Id": "f5eb6b5179874f0093220401292297ed",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2649.1321294451336,
+        "Y": 689.74243429510193
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Element.Location+",
+        "Id": "a84b1a87a0ed4b4b9e4db0a5155bc91f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1380.7190143538069,
+        "Y": 550.92288934720807
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "1bd2b723f0704e12a920262349b8afa2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1768.2818779843831,
+        "Y": 620.83982027177774
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Element.SetLocation",
+        "Id": "853b698d0fed4aa3bf29753190fdd4db",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4771.5098236376716,
+        "Y": 189.99486766404289
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Geometry.Translate",
+        "Id": "21525dc3fe494f60bbb274c1e326abec",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3803.6632743803589,
+        "Y": -40.295664176362436
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "-",
+        "Id": "a1af8625549d4215a249d5ce98b9d7b4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3247.7716345267436,
+        "Y": 260.63082657769695
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "-",
+        "Id": "d3e1f5b73c2e48668267a3c33b58586f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3251.9562645280448,
+        "Y": 601.67942046614723
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Line.ByStartPointEndPoint",
+        "Id": "53175ce6f1b34b808a9a18c4197949c1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4297.6124649244566,
+        "Y": 188.75933854473527
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "e4a99d04f0994a0b93c07b583f5fbf7c",
+        "Title": "Y Translation",
+        "Nodes": [
+          "d3e1f5b73c2e48668267a3c33b58586f"
+        ],
+        "Left": 3241.9562645280448,
+        "Top": 505.27942046614726,
+        "Width": 194.40000000000009,
+        "Height": 214.60000000000002,
+        "FontSize": 36.0,
+        "InitialTop": 601.67942046614723,
+        "InitialHeight": 148.20000000000005,
+        "TextblockHeight": 86.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "0f9f2f58403748eabf71b2719b7e078f",
+        "Title": "X Translation",
+        "Nodes": [
+          "a1af8625549d4215a249d5ce98b9d7b4"
+        ],
+        "Left": 3237.7716345267436,
+        "Top": 164.23082657769694,
+        "Width": 194.40000000000009,
+        "Height": 214.6,
+        "FontSize": 36.0,
+        "InitialTop": 260.63082657769695,
+        "InitialHeight": 148.2,
+        "TextblockHeight": 86.4,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "590c5acb795d413db04fddb70560d25d",
+        "Title": "Start Point",
+        "Nodes": [
+          "3a7cd908426b439abb0dc6559bc08c22",
+          "cbaeb8cde9c94a2fa4643917cdd1ef58",
+          "d817f6bf997d4df0b34e32aba51b17f2"
+        ],
+        "Left": 2283.3642870511862,
+        "Top": 204.41644707918414,
+        "Width": 509.190622007467,
+        "Height": 249.52922696112438,
+        "FontSize": 36.0,
+        "InitialTop": 257.61644707918413,
+        "InitialHeight": 428.60377655439231,
+        "TextblockHeight": 43.2,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "253fef05ac134065b7f3202dbab37dda",
+        "Title": "End Point",
+        "Nodes": [
+          "816fcfa230d54d2ca6281d24eb9eb43b",
+          "a43f159b72794fffb671b2c676ad9dbc",
+          "f5eb6b5179874f0093220401292297ed"
+        ],
+        "Left": 2275.7673618359277,
+        "Top": 517.782983645681,
+        "Width": 576.16476760920614,
+        "Height": 264.55945064942091,
+        "FontSize": 36.0,
+        "InitialTop": 570.98298364568109,
+        "InitialHeight": 241.35945064942086,
+        "TextblockHeight": 43.2,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e82df7518d974a6d8d434d213010fb15",
+        "Title": "New End Points",
+        "Nodes": [
+          "21525dc3fe494f60bbb274c1e326abec"
+        ],
+        "Left": 3793.6632743803589,
+        "Top": -93.495664176362439,
+        "Width": 270.40000000000009,
+        "Height": 222.60000000000002,
+        "FontSize": 36.0,
+        "InitialTop": -40.295664176362436,
+        "InitialHeight": 199.39999999999998,
+        "TextblockHeight": 43.2,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -664.71959902686808,
+    "Y": 200.71965326652131,
+    "Zoom": 0.42560868662467166
+  }
+}
